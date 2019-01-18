@@ -4,11 +4,16 @@ username: 'vmcp'
 
 downloads: ~/.ansible-downloads/
 
+# packages added: bash-completion, certbot, dnsmasq, docker-compose, kubernetes-cli, links, postgresql, yarn 
 default_homebrew_installed_packages:
   - awscli
   - azure-cli
+  - bash-completion
+  - certbot
   - curl
   - dfu-util
+  - dnsmasq
+  - docker-compose
   - ffmpeg
   - git
   - gnupg
@@ -16,10 +21,14 @@ default_homebrew_installed_packages:
   - go
   - hub
   - jq
-#  - lastpass-cli
+  - kubernetes-cli
+# - lastpass-cli
+  - links
   - mtr
   - nmap
   - node
+  - openconnect
+  - postgresql
   - pyenv
   - pyenv-virtualenv
   - python
@@ -30,15 +39,19 @@ default_homebrew_installed_packages:
   - vim
   - watch
   - wget
+  - yarn
   - youtube-dl
+  - zsh
   - zsh-syntax-highlighting
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
 
+# Additional cask apps to install:  1password, alfred, anyconnect, postman, sonos, virtualbox
 homebrew_cask_appdir: /Applications
 default_homebrew_cask_apps:
+  - 1password
   - appcleaner
   - bettertouchtool
   - docker
@@ -56,6 +69,7 @@ default_homebrew_cask_apps:
   - malwarebytes
   - microsoft-azure-storage-explorer
   - microsoft-teams
+  - postman
   - slack
   - skype
   - skype-for-business
@@ -65,6 +79,7 @@ default_homebrew_cask_apps:
 # - twitch
   - vagrant
   - vagrant-vmware-utility
+  - virtualbox
   - visual-studio-code
   - vlc
   - vmware-fusion
@@ -74,27 +89,27 @@ default_homebrew_cask_apps:
   - zoomus-outlook-plugin
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps:
-  - { id: 1295203466, name: "Microsoft Remote Desktop" }
-mas_email: ""
-mas_password: ""
+# mas_installed_apps:
+#  - { id: 1295203466, name: "Microsoft Remote Desktop" }
+#mas_email: ""
+#mas_password: ""
 
-dev_symlinks:
-  - { src: "{{ ansible_user_dir }}/Dropbox/Development/bin",
-      dest: "{{ ansible_user_dir }}/Development/bin"
-    }
-  - { src: "{{ ansible_user_dir }}/Dropbox/Development/gitlab.home.ioports.net",
-      dest: "{{ ansible_user_dir }}/Development/gitlab.home.ioports.net"
-    }
-  - { src: "{{ ansible_user_dir }}/Dropbox/Development/github.emcrubicon.com",
-      dest: "{{ ansible_user_dir }}/Development/github.emcrubicon.com"
-    }
-  - { src: "{{ ansible_user_dir }}/Dropbox/Development/github.com",
-      dest: "{{ ansible_user_dir }}/Development/github.com"
-    }
-  - { src: "{{ ansible_user_dir }}/Dropbox/Development/scratch",
-      dest: "{{ ansible_user_dir }}/Development/scratch"
-    }
+#dev_symlinks:
+#  - { src: "{{ ansible_user_dir }}/Dropbox/Development/bin",
+#      dest: "{{ ansible_user_dir }}/Development/bin"
+#    }
+#  - { src: "{{ ansible_user_dir }}/Dropbox/Development/gitlab.home.ioports.net",
+#      dest: "{{ ansible_user_dir }}/Development/gitlab.home.ioports.net"
+#    }
+#  - { src: "{{ ansible_user_dir }}/Dropbox/Development/github.emcrubicon.com",
+#      dest: "{{ ansible_user_dir }}/Development/github.emcrubicon.com"
+#    }
+#  - { src: "{{ ansible_user_dir }}/Dropbox/Development/github.com",
+#      dest: "{{ ansible_user_dir }}/Development/github.com"
+#    }
+#  - { src: "{{ ansible_user_dir }}/Dropbox/Development/scratch",
+#      dest: "{{ ansible_user_dir }}/Development/scratch"
+#    }
 
 osx_script: "~/.osx --no-restart"
 
