@@ -16,6 +16,8 @@ This is a work in progress, and is mostly a means for me to document my current 
 ## Installation
 
   1. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
+  2a. Run `sudo easy_install pip` to install PIP which is the preferred way to install Ansible on MacOSX
+  2b. Run `sudo pip install ansible`
   2. [Install Ansible](http://docs.ansible.com/intro_installation.html).
   3. Clone this repository to your local drive.
   4. Run `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.

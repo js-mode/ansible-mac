@@ -1,6 +1,6 @@
 ---
 
-username: 'matt'
+username: 'vmcp'
 
 downloads: ~/.ansible-downloads/
 
@@ -16,7 +16,7 @@ default_homebrew_installed_packages:
   - go
   - hub
   - jq
-  - lastpass-cli
+#  - lastpass-cli
   - mtr
   - nmap
   - node
@@ -42,11 +42,11 @@ default_homebrew_cask_apps:
   - appcleaner
   - bettertouchtool
   - docker
-  - dropbox
+#  - dropbox
   - firefox
   - homebrew/cask-drivers/logitech-options
   - homebrew/cask-fonts/font-sourcecodepro-nerd-font
-  - gitkraken
+#  - gitkraken
   - google-chrome
   - google-cloud-sdk
   - gpg-suite
@@ -60,9 +60,9 @@ default_homebrew_cask_apps:
   - skype
   - skype-for-business
   - spotify
-  - synology-surveillance-station-client
+#  - synology-surveillance-station-client
   - tor-browser
-  - twitch
+# - twitch
   - vagrant
   - vagrant-vmware-utility
   - visual-studio-code
