@@ -20,5 +20,5 @@
       tags: ['mas']
 
   tasks:
-    - include_tasks: tasks/development.yml
-      tags: ['dev']
+#    - include_tasks: tasks/development.yml
+#     tags: ['dev']

@@ -5,7 +5,7 @@ username: 'vmcp'
 downloads: ~/.ansible-downloads/
 
 # packages added: bash-completion, certbot, dnsmasq, docker-compose, kubernetes-cli, links, postgresql, yarn 
-default_homebrew_installed_packages:
+homebrew_installed_packages:
   - awscli
   - azure-cli
   - bash-completion
@@ -50,7 +50,7 @@ homebrew_taps:
 
 # Additional cask apps to install:  1password, alfred, anyconnect, postman, sonos, virtualbox
 homebrew_cask_appdir: /Applications
-default_homebrew_cask_apps:
+homebrew_cask_apps:
   - 1password
   - appcleaner
   - bettertouchtool
@@ -65,8 +65,8 @@ default_homebrew_cask_apps:
   - gpg-suite
   - insomnia
   - iterm2
-  - istat-menus
-  - malwarebytes
+# - istat-menus
+# - malwarebytes
   - microsoft-azure-storage-explorer
   - microsoft-teams
   - postman
@@ -89,8 +89,7 @@ default_homebrew_cask_apps:
   - zoomus-outlook-plugin
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-# mas_installed_apps:
-#  - { id: 1295203466, name: "Microsoft Remote Desktop" }
+mas_installed_apps: []
 #mas_email: ""
 #mas_password: ""
 
