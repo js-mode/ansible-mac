@@ -19,6 +19,7 @@ homebrew_installed_packages:
   - gnupg
   - gnu-tar
   - go
+  - htop
   - hub
   - jq
   - kubernetes-cli
@@ -65,6 +66,7 @@ homebrew_cask_apps:
   - gpg-suite
   - insomnia
   - iterm2
+  - karabiner-elements
 # - istat-menus
 # - malwarebytes
   - microsoft-azure-storage-explorer
@@ -89,9 +91,21 @@ homebrew_cask_apps:
   - zoomus-outlook-plugin
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+#mas_installed_apps: []
 #mas_email: ""
 #mas_password: ""
+mas_email: "am@vmcp.io"
+mas_password: ""
+mas_installed_app_ids: [] # Deprecated
+mas_installed_apps:
+  - { id: 425264550, name: "Blackmagic Disk Speed Test (3.0)" }
+  - { id: 498486288, name: "Quick Resizer (1.9)" }
+  - { id: 497799835, name: "Xcode (8.1)" }
+  - { id: 823766827, name: "OneDrive" }
+  - { id: 441258766, name: "Magnet" }
+  
+mas_upgrade_all_apps: no
+mas_signin_dialog: no
 
 #dev_symlinks:
 #  - { src: "{{ ansible_user_dir }}/Dropbox/Development/bin",
