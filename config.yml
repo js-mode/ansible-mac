@@ -1,10 +1,9 @@
 ---
-
 username: 'vmcp'
 
 downloads: ~/.ansible-downloads/
 
-# packages added: bash-completion, certbot, dnsmasq, docker-compose, kubernetes-cli, links, postgresql, yarn 
+# packages added: bash-completion, certbot, dnsmasq, docker-compose, kubernetes-cli, links, postgresql, yarn
 homebrew_installed_packages:
   - awscli
   - azure-cli
@@ -23,7 +22,7 @@ homebrew_installed_packages:
   - hub
   - jq
   - kubernetes-cli
-# - lastpass-cli
+  # - lastpass-cli
   - links
   - mtr
   - nmap
@@ -57,19 +56,19 @@ homebrew_cask_apps:
   - appcleaner
   - bettertouchtool
   - docker
-#  - dropbox
+  #  - dropbox
   - firefox
   - homebrew/cask-drivers/logitech-options
   - homebrew/cask-fonts/font-sourcecodepro-nerd-font
-#  - gitkraken
+  #  - gitkraken
   - google-chrome
   - google-cloud-sdk
   - gpg-suite
   - insomnia
   - iterm2
   - karabiner-elements
-# - istat-menus
-# - malwarebytes
+  # - istat-menus
+  # - malwarebytes
   - microsoft-azure-storage-explorer
   - microsoft-teams
   - postman
@@ -77,9 +76,9 @@ homebrew_cask_apps:
   - skype
   - skype-for-business
   - spotify
-#  - synology-surveillance-station-client
+  #  - synology-surveillance-station-client
   - tor-browser
-# - twitch
+  # - twitch
   - vagrant
   - vagrant-vmware-utility
   - virtualbox
@@ -95,16 +94,16 @@ homebrew_cask_apps:
 #mas_installed_apps: []
 #mas_email: ""
 #mas_password: ""
-mas_email: "am@vmcp.io"
-mas_password: ""
+mas_email: 'am@vmcp.io'
+mas_password: ''
 mas_installed_app_ids: [] # Deprecated
 mas_installed_apps:
-  - { id: 425264550, name: "Blackmagic Disk Speed Test (3.0)" }
-  - { id: 498486288, name: "Quick Resizer (1.9)" }
-  - { id: 497799835, name: "Xcode (8.1)" }
-  - { id: 823766827, name: "OneDrive" }
-  - { id: 441258766, name: "Magnet" }
-  
+  - { id: 425264550, name: 'Blackmagic Disk Speed Test (3.0)' }
+  - { id: 498486288, name: 'Quick Resizer (1.9)' }
+  - { id: 497799835, name: 'Xcode (8.1)' }
+  - { id: 823766827, name: 'OneDrive' }
+  - { id: 441258766, name: 'Magnet' }
+
 mas_upgrade_all_apps: no
 mas_signin_dialog: no
 
@@ -125,18 +124,20 @@ mas_signin_dialog: no
 #      dest: "{{ ansible_user_dir }}/Development/scratch"
 #    }
 
-osx_script: "~/.osx --no-restart"
+osx_script: '~/.osx --no-restart'
 
-
-gem_packages: []
+gem_packages:
+  []
   # - name: bundler
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
+npm_packages:
+  []
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
-pip_packages: []
+pip_packages:
+  []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
