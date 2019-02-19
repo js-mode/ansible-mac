@@ -22,3 +22,6 @@
   tasks:
 #    - include_tasks: tasks/development.yml
 #     tags: ['dev']
+    - name: Install VirtualEnv
+      command: sudo easy_install virtualenv
+
